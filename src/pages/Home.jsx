@@ -10,7 +10,7 @@ function Home() {
         <div>
             <Nav /><br />
             <div id='Home'>
-                <div style={{ position: 'absolute', marginTop: '13%', paddingRight: '150px', padding: '15px', backgroundColor: '#fff' }}>
+                <div style={{ position: 'absolute', marginTop: '13%', paddingRight: '200px', padding: '15px', backgroundColor: '#fff' }}>
                     <div style={{ position: 'absolute', backgroundColor: 'yellow', height: '25px', width: '3px' }}></div>
                     <Typography variant='body1' sx={{ marginLeft: '10px', fontWeight: 'semibold' }}>
                         Logistic

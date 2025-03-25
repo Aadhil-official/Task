@@ -3,7 +3,7 @@ import CargoArea from '../assets/CargoArea.jpg'
 import { Button, Grid, Typography } from '@mui/material'
 import leftarr from '../assets/leftarr.png'
 import rightarr from '../assets/rightarr.png'
-import { Footer, Nav, Welcome } from '../components'
+import { Footer, Nav, Services, Welcome } from '../components'
 
 function Home() {
     return (
@@ -44,7 +44,8 @@ function Home() {
             <Button size='small' variant='contained' sx={{ backgroundColor: 'orange', borderRadius: '0px' }}>
                 <img src={rightarr} width='20px' height='20px' alt="arrow" />
             </Button>
-            <Welcome />
+            <Welcome /><br/>
+            <Services />
             {/* </div> */}
             <Footer />
         </div>

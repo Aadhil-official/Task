@@ -1,0 +1,15 @@
+.film {
+    padding: 0px; 
+   display: flex; 
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: space-around; 
+   width: min-content;
+   max-width: 1400px;
+   height: 300px;
+   margin: 10px;
+   overflow-y: scroll;
+   overflow-x: auto;
+   transition: transform 450ms;
+}

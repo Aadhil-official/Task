@@ -15,6 +15,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import logo from '../assets/carologo.png'
+import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'Pages', 'Tracking', 'Services', 'Blog'];
@@ -74,10 +76,12 @@ function Nav(props) {
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
                             <>
-                                <div  height='25px' width='5px' style={{ position:'absolute',backgroundColor: 'orange'}}></div>
-                                <Button key={item} sx={{ color: '#000' }}>
-                                    {item}
-                                </Button>
+                                <div height='25px' width='5px' style={{ position: 'absolute', backgroundColor: 'orange' }}></div>
+                                <NavHashLink smooth to={`#${item}`}>
+                                    <Button key={item} sx={{ color: '#000' }}>
+                                        {item}
+                                    </Button>
+                                </NavHashLink>
                             </>
                         ))}
                         <Button sx={{ backgroundColor: 'orange', color: '#fff', marginRight: '10px' }}>Get A Quote</Button>

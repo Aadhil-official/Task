@@ -4,7 +4,7 @@ import cargo2 from '../assets/cargo2.webp'
 
 function Welcome() {
     return (
-        <div style={{ marginTop: '50px' }}>
+        <div id='Pages' style={{ marginTop: '50px' }}>
             <Grid container>
                 <Grid item xs={6}>
                     <img src={cargo2} style={{ marginLeft: '20px' }} width='70%' height='90%' alt="cargo img" />

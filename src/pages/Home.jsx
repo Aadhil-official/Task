@@ -9,7 +9,7 @@ function Home() {
     return (
         <div id='Home'>
             <Nav /><br />
-            <div style={{ position: 'absolute', marginTop: '12%', paddingRight: '50px', padding: '15px', backgroundColor: '#fff' }}>
+            <div style={{ position: 'absolute', marginTop: '13%', paddingRight: '150px', padding: '15px', backgroundColor: '#fff' }}>
                 <div style={{ position: 'absolute', backgroundColor: 'yellow', height: '25px', width: '3px' }}></div>
                 <Typography variant='body1' sx={{ marginLeft: '10px', fontWeight: 'semibold' }}>
                     Logistic
@@ -34,16 +34,16 @@ function Home() {
             </div>
             {/* <Grid container>
                 <Grid item> */}
-            <img src={CargoArea} width='60%' height='60%' style={{ marginLeft: '40%', marginTop: '10%' }} alt="cargo image" />
+            <img src={CargoArea} width='50%' height='50%' style={{ marginLeft: '30%', marginTop: '10%' }} alt="cargo image" />
             {/* </Grid>
-            </Grid> */}
+            </Grid> */}<br/>
             {/* <div style={{backgroundColor:'orange', padding:'20px'}}> */}
             <Button size='small' variant='contained' sx={{ backgroundColor: 'orange', borderRadius: '0px' }}>
                 <img src={leftarr} width='20px' height='20px' alt="arrow" />
             </Button>
             <Button size='small' variant='contained' sx={{ backgroundColor: 'orange', borderRadius: '0px' }}>
                 <img src={rightarr} width='20px' height='20px' alt="arrow" />
-            </Button>
+            </Button><br/>
             <Welcome /><br />
             <Services />
             <State />

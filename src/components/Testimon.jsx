@@ -4,7 +4,7 @@ import plussym from '../assets/plussym.png'
 
 function Testimon() {
     return (
-        <div>
+        <div style={{marginTop:'50px'}}>
             <Grid container spacing={2}>
                 <Grid item xs={2}></Grid>
                 <Grid item xs={4}>

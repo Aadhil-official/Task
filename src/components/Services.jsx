@@ -4,22 +4,29 @@ import CargoArea from '../assets/CargoArea.jpg'
 
 function Services() {
     return (
-        <div>
-            <Grid container>
-                <Grid justifyContent='center' item xs={12} textAlign='center'>
+        <div style={{ marginTop: '50px' }}>
+            <Grid container spacing={2}>
+                <Grid item xs={12} textAlign='center'>
                     <Typography variant='body2' sx={{ color: 'lightgreen' }}>Real Solution ,Rela Fast</Typography>
                     <Typography variant='h4' sx={{ fontWeight: 'bold' }}>Best Global Logistic Solutions.</Typography>
+                    <br />
                 </Grid>
-                <Grid item xs={6} sx={{ marginRight: 'auto', marginLeft: 'auto' }}>
+                <Grid item xs={2}></Grid>
+                <Grid item xs={4} sx={{ alignItems: 'center' }}>
                     {/* <Grid xs={6}> */}
-                    <img src={CargoArea} width='50%' height='50%' alt="cargo"  />
+                    <img src={CargoArea} width='60%' height='73%' alt="cargo" />
+                    <Typography variant='h6'></Typography>
+                </Grid>
+                <Grid item xs={4} sx={{ alignItems: 'center' }}>
                     {/* </Grid>
                     
                     <Grid xs={6}> */}
                     {/* <Typography variant='body2'>hiii</Typography> */}
-                    <img src={CargoArea} width='50%' height='50%' alt="" />
+                    <img src={CargoArea} width='60%' height='73%' alt="" />
                     {/* </Grid> */}
+                    
                 </Grid>
+                <Grid item xs={2}></Grid>
             </Grid>
         </div>
     )

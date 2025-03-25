@@ -6,7 +6,7 @@ import '../styles/Logos.css'
 function Logos() {
     const arr = [com, com, com, com, com, com, com, com, com, com, com, com];
     return (
-        <div>
+        <div style={{ marginTop: '50px' }}>
             <Grid container>
                 <Grid item xs={12} className='film'>
                     {arr.map((item, index) => (

@@ -15,7 +15,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import logo from '../assets/carologo.png'
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 
 const drawerWidth = 240;

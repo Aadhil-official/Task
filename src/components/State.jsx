@@ -15,26 +15,36 @@ function State() {
     }, []);
 
     return (
-        <div id='Tracking' style={{marginTop:'50px'}}>
-            <Grid container justifyContent='center'>
-                <Grid textAlign='center' item xs={2}>
-                    <Typography variant='h4'>
-                        {countdel} Delivered<br />packages
+        <div id='Tracking'>
+            <Grid container justifyContent='center' spacing={4}>
+                <Grid item xs={12}>
+                    <div style={{ marginTop: '60px' }}>&nbsp;</div>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3} container justifyContent="center" alignItems="center" textAlign="left">
+                    <Typography variant='h3' sx={{ fontWeight: 'bold', marginRight: '5px' }}>{countdel}</Typography>
+                    <Typography variant='body1'>
+                        Delivered<br />packages
                     </Typography>
                 </Grid>
-                <Grid textAlign='center' justifyContent='center' item xs={2}>
-                    <Typography variant='h4'>
-                        {countcon} Countries<br />covered
+                
+                <Grid item xs={12} sm={6} md={3} container justifyContent="center" alignItems="center" textAlign="left">
+                    <Typography variant='h3' sx={{ fontWeight: 'bold', marginRight: '5px' }}>{countcon}</Typography>
+                    <Typography variant='body1'>
+                        Countries<br />covered
                     </Typography>
                 </Grid>
-                <Grid textAlign='center' justifyContent='center' item xs={2}>
-                    <Typography variant='h4'>
-                        {countton} Tons<br />of Goods
+                
+                <Grid item xs={12} sm={6} md={3} container justifyContent="center" alignItems="center" textAlign="left">
+                    <Typography variant='h3' sx={{ fontWeight: 'bold', marginRight: '5px' }}>{countton}</Typography>
+                    <Typography variant='body1'>
+                        Tons<br />of Goods
                     </Typography>
                 </Grid>
-                <Grid textAlign='center' justifyContent='center' item xs={2}>
-                    <Typography variant='h4'>
-                        {countsat} Satisfied<br />Clients
+                
+                <Grid item xs={12} sm={6} md={3} container justifyContent="center" alignItems="center" textAlign="left">
+                    <Typography variant='h3' sx={{ fontWeight: 'bold', marginRight: '5px' }}>{countsat}</Typography>
+                    <Typography variant='body1'>
+                        Satisfied<br />Clients
                     </Typography>
                 </Grid>
             </Grid>

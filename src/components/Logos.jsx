@@ -1,21 +1,27 @@
-import { Grid } from '@mui/material'
-import React from 'react'
-import com from '../assets/companylogo.png'
-import '../styles/Logos.css'
+import { Grid } from '@mui/material';
+import React from 'react';
+import com from '../assets/companylogo.png';
+import '../styles/Logos.css';
 
 function Logos() {
-    const arr = [com, com, com, com, com, com, com, com, com, com, com, com];
+    const arr = Array(12).fill(com);
+
     return (
-        <div style={{ marginTop: '50px' }}>
-            <Grid container>
-                <Grid item xs={12} className='film'>
-                    {arr.map((item, index) => (
-                        <img key={index} src={item} alt="Company Logo" style={{ marginRight: '20px', width: '100px', height: '100px', margin: '10px' }} />
-                    ))}
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Grid container justifyContent="center" alignItems="center">
+                <Grid item xs={12}>
+                    <div style={{ height: '100px' }}>&nbsp;</div>
+                </Grid>
+                <Grid item xs={12} className="film-container">
+                    <div className="film">
+                        {arr.map((item, index) => (
+                            <img key={index} src={item} alt="Company Logo" className="logopart" />
+                        ))}
+                    </div>
                 </Grid>
             </Grid>
         </div>
-    )
+    );
 }
 
-export default Logos
+export default Logos;

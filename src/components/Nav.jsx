@@ -23,6 +23,7 @@ const navItems = ['Home', 'Pages', 'Tracking', 'Services', 'Blog'];
 
 function Nav(props) {
 
+    const [selectedmenu, setSelectedmenu] = React.useState("Home");
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const { window } = props;
@@ -31,6 +32,9 @@ function Nav(props) {
         setMobileOpen((prevState) => !prevState);
     };
 
+    const handleMenuClick = (item) => {
+        setSelectedmenu(item);
+    };
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
@@ -78,8 +82,10 @@ function Nav(props) {
                             <>
                                 <div height='25px' width='5px' style={{ position: 'absolute', backgroundColor: 'orange' }}></div>
                                 <NavHashLink smooth to={`#${item}`}>
-                                    <Button key={item} sx={{ color: '#000' }}>
-                                        {item}
+                                    <Button onClick={() => handleMenuClick(item)} key={item} sx={{
+                                        color: '#000'
+                                    }}>
+                                        <span style={{ color: 'orange', display:  selectedmenu === item ? "flex" : "none", marginRight:'2px',marginBottom:'3px' }}>| </span>{item}
                                     </Button>
                                 </NavHashLink>
                             </>
